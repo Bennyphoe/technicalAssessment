@@ -1,0 +1,16 @@
+
+{
+  "presets": [
+    "@babel/preset-env",
+    ["@babel/preset-react", {
+    "runtime": "automatic"
+  }]
+  ]
+}
+
+//.babelrc
+//config file for babel, tool used to transpile JS code
+//"presets" specifies an array of preset configurations that Babel should use during transpilation.
+
+//@babel/preset-env :  preset that enables Babel to transpile JavaScript code based on the target environment's compatibility requirements
+//["@babel/preset-react", {"runtime": "automatic"}]  is a preset specifically for React applications. Setting "runtime": "automatic" enables Babel's automatic JSX runtime, which reduces the size of the compiled output by injecting JSX pragma functions only when necessary.
